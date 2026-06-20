@@ -1,6 +1,11 @@
-import { getAllModels } from "@/lib/models";
-import type { Model } from "@/types"
-export default async function () {
-  const models: Model[] = await getAllModels();
-  return models.map(model => <p key={model.id}>{model.name}</p>)
+import SearchForm from '@/components/SearchForm'
+import ModelsGrid from '@/components/ModelsGrid'
+
+export default function ModelsPage(){
+  return (
+    <div>
+      <SearchForm/>
+      <ModelsGrid/>
+    </div>
+  )
 }
