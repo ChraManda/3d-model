@@ -18,7 +18,7 @@ export default function AboutPage(){
               alt="PrintForge Community - A group of makers collaborating on 3D printing projects"
               className="absolute inset-0 w-full h-full object-cover rounded-lg"
             />
-
+ 
           </div>
           <div>
             <p
