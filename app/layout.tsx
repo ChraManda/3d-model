@@ -1,6 +1,6 @@
 import "./globals.css";
 import Link from "next/link"
-import type { RootLayoutProps } from "@/app/types"
+import type { RootLayoutProps } from "@/types"
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google"
 import PFLogoIcon from "@/public/printforge-logo-icon.svg"
 import PFLogo from "@/public/printforge-logo.svg"
