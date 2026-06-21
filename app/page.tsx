@@ -10,4 +10,4 @@ export default async function ModelsPage(){
       <ModelsGrid models={models}/>
     </div>
   )
-}
+}  
