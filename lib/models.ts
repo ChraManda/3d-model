@@ -1,9 +1,10 @@
-import modelsData from "../data/models.json"
-import type { Model } from "../types"
+import { getDBConnection } from "./db";
 
-export async function getAllModels() {
-  // This is where you'd write code to fetch the list
-  // of models from a database. We're mocking that with
-  // our JSON array of data in models.json for now.
-  return modelsData as Model[];
+export async function getModels() {
+    const db = await getDBConnection()
+    try {
+       return await db.all(`SELECT * FROM models`)
+    } finally {
+       await db.close()
+    }
 }

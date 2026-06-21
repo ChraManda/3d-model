@@ -34,14 +34,3 @@ export default function NavBar() {
   );
 }
 
-/*  
-CHALLENGE - NavLink Component  
-- Create a `NavLink.tsx` component  
-- Accept `href` and `children` as props  
-- Move one of the `<li>` elements from `Navbar.tsx` into the component  
-- Replace the hardcoded values with props  
-- Use `NavLink` inside `Navbar.tsx`
-  
-DOCS:
-- https://react.dev/learn/passing-props-to-a-component#passing-props-to-a-component 
-*/
