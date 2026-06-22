@@ -3,9 +3,11 @@ import ModelsGrid from '@/components/ModelsGrid'
 
 import {getModels} from '@/lib/models'
 
-export default async function ModelsPage(){
+export default async function ModelsPage({searchParams}: {searchParams?: Promise<{search: string}>}){
 
-  const models = await getModels()
+  const search = (await searchParams)?.search?.toLowerCase() || ""
+  const models = await getModels(search)
+  console.log(search)
 
   return (
     <div>
