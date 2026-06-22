@@ -11,8 +11,8 @@ export default async function ModelsPage({searchParams}: {searchParams?: Promise
 
   return (
     <div>
-      <SearchForm/>
-      <ModelsGrid models={models}/>
+      <SearchForm search={search}/>
+      <ModelsGrid models={models} search={search}/>
     </div>
   )
 }

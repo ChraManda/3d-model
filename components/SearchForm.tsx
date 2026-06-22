@@ -1,9 +1,10 @@
 import Form from 'next/form'
-export default function SearchForm(){
+export default function SearchForm({search}: {search?:string}){
   return (
-    <Form action="/3d-models" className="w-full px-5 md:px-0 md:max-w-xl">
+    <Form action="/3d-models" className="w-full px-5 md:px-0 md:max-w-xl ">
       <input
         type="text"
+        defaultValue={search}
         id="search"
         name="search"
         placeholder="E.g. dragon"
