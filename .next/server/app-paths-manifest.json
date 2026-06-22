@@ -1,6 +1,0 @@
-{
-  "/page": "app/page.js",
-  "/3d-models/page": "app/3d-models/page.js",
-  "/3d-models/categories/[categorySlug]/page": "app/3d-models/categories/[categorySlug]/page.js",
-  "/3d-models/[id]/page": "app/3d-models/[id]/page.js"
-}
