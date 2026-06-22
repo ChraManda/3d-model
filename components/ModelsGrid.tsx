@@ -16,7 +16,7 @@ export default function ModelsGrid({ models }: { models: Models[] }) {
       <h1 className="mb-8 text-3xl font-bold">3D Models</h1>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {models?.map((model) => {
-          return <ModelCard key={model.id} />;
+          return <ModelCard key={model.id} model={model}/>;
         })}
       </div>
     </div>
