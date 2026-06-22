@@ -17,3 +17,12 @@ export async function getModelsByCategorySlug(categorySlug: string) {
       await db.close()
    }
 }
+
+export async function getModelById(id: string){
+   const db = await getDBConnection()
+   try {
+     return  await db.get(`SELECT * FROM models WHERE id=?`, [id])
+   } finally {
+      await db.close()
+   }
+}

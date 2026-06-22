@@ -1,11 +1,16 @@
 import SearchForm from '@/components/SearchForm'
 import ModelsGrid from '@/components/ModelsGrid'
 
-export default function ModelsPage(){
+import {getModels} from '@/lib/models'
+
+export default async function ModelsPage(){
+
+  const models = await getModels()
+
   return (
     <div>
       <SearchForm/>
-      <ModelsGrid/>
+      <ModelsGrid models={models}/>
     </div>
   )
 }
